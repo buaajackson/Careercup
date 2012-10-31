@@ -1,0 +1,11 @@
+Employee em = new Employee();
+ArrayList<Paycheck> list = em.getPaychecks();
+
+int amount = 0;
+for(Paycheck pc : list){
+   if(pr.getPayrollRun().getPayrollRunDate() =< data2 && pr.getPayrollRun().getPayrollRunDate() >= data1){
+		amount += pc.getNetAmount();
+   }
+}
+
+return amount;
